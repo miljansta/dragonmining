@@ -1,0 +1,109 @@
+/*
+    Forms
+ */
+input {
+    line-height: normal;
+}
+
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+    background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: #007acc;
+}
+
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    outline: thin dotted;
+    outline-offset: -4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    border-radius: 2px;
+    color: #686868;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    background-color: #fff;
+    border-color: #007acc;
+    color: #1a1a1a;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+::-moz-placeholder {
+    color: #b0b0b0;
+}
+
+:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+:-moz-placeholder {
+    color: #b0b0b0;
+}
+
+.post-password-form {
+    margin-bottom: 1.75em;
+}
+
+.post-password-form label {
+    color: #686868;
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.076923077em;
+    line-height: 1.6153846154;
+    margin-bottom: 1.75em;
+    text-transform: uppercase;
+}
+
+.post-password-form input[type="password"] {
+    margin-top: 0.4375em;
+}
+
+.post-password-form> :last-child {
+    margin-bottom: 0;
+}

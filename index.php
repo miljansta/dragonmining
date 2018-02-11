@@ -1,16 +1,17 @@
 <?php
 
 	include 'engine/session.php';
-	
+	include 'engine/pagenotfound.php';
 	
 	//incluce header
     include ('view/layout/header.html');
 	
-	//print_r($_SESSION);
-	
 	//include page
-    include('view/pages/' . $_SESSION['page'] . '.html');
-	//print_r($_GET);
+	if($pageExist){
+		include('view/pages/' . $_SESSION['page'] . '.html');
+	}else{
+		include('view/pages/pageNotFound.html');
+	}
 	
 	//include footer
     include ('view/layout/footer.html'); 

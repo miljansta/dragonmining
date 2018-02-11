@@ -479,7 +479,8 @@ header {
   width: 100%;
   height: 76px;
   transition: all .3s ease-in-out;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 100; }
 
 main {
   margin-top: 76px; }
@@ -628,7 +629,17 @@ navigation.on {
 
 #slider {
   height: 400px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
+
+#slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .4s ease-in; }
 
 .container {
   padding: 40px 0; }

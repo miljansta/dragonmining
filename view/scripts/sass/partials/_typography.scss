@@ -18,7 +18,7 @@ h5,
 h6 {
     clear: both;
     text-rendering: optimizeLegibility;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #353745;
 }
@@ -59,4 +59,9 @@ cite,
 em,
 i {
     font-style: italic;
+}
+
+@font-face {
+    font-family: "Moonhouse";
+    src: url('../../fonts/moonhouse.ttf') format('truetype');
 }

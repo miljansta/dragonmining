@@ -1,18 +1,19 @@
 <?php
+    define('ROOTPATH', __DIR__);
 
-	include 'engine/session.php';
-	include 'engine/pagenotfound.php';
+    include 'engine/session.php';
+    include 'engine/pagenotfound.php';
 	
-	//incluce header
+    //incluce header
     include ('view/layout/header.html');
 	
-	//include page
-	if($pageExist){
-		include('view/pages/' . $_SESSION['page'] . '.html');
-	}else{
-		include('view/pages/pageNotFound.html');
-	}
-	
-	//include footer
+    //include page
+    if($pageExist){
+            include('view/pages/' . $_SESSION['page'] . '.html');
+    }else{
+            include('view/pages/pageNotFound.html');
+    }
+
+    //include footer
     include ('view/layout/footer.html'); 
 ?>

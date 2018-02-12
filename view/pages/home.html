@@ -1,77 +1,206 @@
 <main>
     <div id="slider">
-      <img class="mySlides" src="images/slider/slider_1.jpg" style="width:100%">
-      <img class="mySlides" src="images/slider/slider_2.jpg" style="width:100%">
-      <img class="mySlides" src="images/slider/slider_3.jpg" style="width:100%">
+        <img class="mainSlide" src="images/slider/slider_1.jpg">
+        <img class="mainSlide" src="images/slider/slider_2.jpg">
+        <img class="mainSlide" src="images/slider/slider_3.jpg">
+        <img class="mainSlide" src="images/slider/slider_4.jpg">
+        <div class="slider-navigation">
+            <span class="demo-slider" onclick="currentDiv(1)"></span> 
+            <span class="demo-slider" onclick="currentDiv(2)"></span> 
+            <span class="demo-slider" onclick="currentDiv(3)"></span>
+            <span class="demo-slider" onclick="currentDiv(4)"></span>
+        </div>
     </div>
     <div class="container col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+    
+    <!-- Lightbox -->
         <div class="row">
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(1)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
                 </div>
             </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(2)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
                 </div>
             </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(3)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                </div>
+            </div>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(4)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                </div>
+            </div>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(5)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                </div>
+            </div>
+            <div class="column col-md-4">
+                <div class="product-box col-md-12 hover-shadow" onclick="openModal();currentSlide(6)">
+                    <div class="product-image">
+                        <img src="images/ivan/20171129_194041.jpg">
+                    </div>
+                    <div class="product-text">
+                        <h4>Sample title</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-box col-md-4">
-                <div class="product-image"><img src="images/ivan/20171129_194041.jpg"></div>
-                <div class="product-text">
-                    <h4>Sample title</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <div class="product-box" style="width:100%">
+                        <div class="product-image">
+                            <img src="images/ivan/20171129_194041.jpg">
+                        </div>
+                        <div class="product-text">
+                            <h4>Sample title</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
+
+            <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+            <!-- Thumbnail image controls -->
+<!--
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(1)" alt="Nature">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(5)" alt="Lights">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/ivan/20171129_194041.jpg" onclick="currentSlide(6)" alt="Lights">
+                </div>
+-->
             </div>
         </div>
     </div>

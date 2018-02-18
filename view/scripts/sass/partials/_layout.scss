@@ -1,6 +1,17 @@
 /*
     Layout
  */
+html.no-scroll, body.no-scroll {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+a {
+    color: $white;
+    &:hover {
+        text-decoration: none;
+    }
+}
 header {
     padding: 15px 0;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);

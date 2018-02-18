@@ -68,7 +68,7 @@ function openModal() {
     document.getElementById('myModal').style.visibility = "visible";
     document.getElementById('myModal').style.opacity = "1.0";
     document.getElementById('header').classList.add("scrolled");
-    
+    document.getElementById('body').classList.add("scrolled");    
 }
 
 // Close the Modal

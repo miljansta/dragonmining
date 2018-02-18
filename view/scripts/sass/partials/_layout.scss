@@ -46,9 +46,10 @@ main {
         text-transform: uppercase;
         font-size: 1rem;
         font-family: "Moonhouse", Verdana, Tahoma;
+        color: $black;
         &:hover {
             color: $black;
-            cursor: default;
+            cursor: pointer;
         }
     }
 }
